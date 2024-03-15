@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<section class="detailed-chapter">
+    <article class="heading-chapter">
+        <h2 class="heading-chapter-number">Chapter: <%= chapter.chapter_number %></h2>
+        <h1 class="heading-chapter-name"><%= chapter.name_translated %></h1>
+        <p class="heading-chapter-summary"><%= chapter.chapter_summary %></p>
+    </article>
+    <article class="verses">
+        <% for(let i = 0; i < verses.length; i++) { %>
+            <a href="/chapter/<%= chapter.chapter_number %>/verse/<%= i+1 %>" class="verse">
+                <h2 class="verse-number">Verse: <%= verses[i].verse_number %></h2>
+                <p class="verse-text"><%= verses[i].text %>...</p>
+            </a>
+        <% } %>
+    </article>
+</section>
+
+<%- include("partials/footer.ejs") %>

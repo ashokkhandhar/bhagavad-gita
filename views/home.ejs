@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+<section class="chapters">
+    <% for(let i = 0; i < chapters.length; i++) { %>
+        <a href="/chapter/<%= i+1 %>" class="chapter">
+            <h2 class="chapter-number">Chapter: <%= chapters[i].chapter_number %></h2>
+            <h1 class="chapter-name"><%= chapters[i].name_translated %></h1>
+            <p class="chapter-summary"><%= chapters[i].chapter_summary.substring(0, 250) %>...</p>
+            <span class="chapter-verses"><%= chapters[i].verses_count %> Verses</span>
+        </a>
+    <% } %>
+</section>
+
+<%- include("partials/footer.ejs")  %>

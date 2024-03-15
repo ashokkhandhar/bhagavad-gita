@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+<section class="verse-container">
+    <h1 class="chapter-verse">Chapter: <%= verse.chapter_number %>, Verse: <%= verse.verse_number %></h1>
+    <p class="main-verse">
+        <%= verse.text.substring(0, verse.text.search('।')+1) %>
+        <br>
+        <%= verse.text.substring(verse.text.search('।')+1, verse.length) %>
+    </p>
+    <p class="verse-transliteration"><%= verse.transliteration %></p>
+    <p class="verse-meaning"><%= verse.word_meanings %></p>
+    <h2 class="verse-headings">Translation</h2>
+    <p class="verse-translation"><%= verse.translations[2].description %></p>
+    <h2 class="verse-headings">Commentary</h2>
+    <p class="verse-Commentary"><%= verse.commentaries[15].description %></p>
+</section>
+
+<%- include("partials/footer.ejs") %>
