@@ -1,6 +1,6 @@
-# bhagavad-gita
+# Bhagavad-gita
 
-It's Web to read Bhagvad Gita.
+It's Web to read the Bhagavad Gita.
 
 ## Technologies
 
@@ -11,3 +11,4 @@ It's Web to read Bhagvad Gita.
 
 ## Live
 
+https://bhagavad-gita-qh67.onrender.com/
