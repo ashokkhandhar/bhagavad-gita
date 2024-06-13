@@ -1,14 +1,11 @@
-# Bhagavad-gita
+# Bhagavad Gita
 
 It's Web to read the Bhagavad Gita.
 
 ## Technologies
 
-- nodeJS
-- express
-- EJS
-- CSS
+- ReactJS
+- TailwindCSS
 
 ## Live
 
-https://bhagavad-gita-qh67.onrender.com/
